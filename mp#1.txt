@@ -1,0 +1,21 @@
+package javaapplication10;
+import java.util.Scanner;
+public class JavaApplication10{
+public static void main(String[] args){
+Scanner x=new Scanner (System.in);
+char a;
+System.out.println("Welcome,User!");
+System.out.println("This program will only recognize letters. Numbers will be ignored.");
+System.out.println("Awaiting user input... ... ...");
+System.out.print("Input:");
+a=x.next().charAt(0);
+if( (a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z'))
+{       
+System.out.println("Recognized as a letter.");
+}     
+else
+{
+System.out.println("Input is not recognized.It is not a letter.");
+}
+}    
+}
